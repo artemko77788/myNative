@@ -14,8 +14,8 @@ import {
 const App = () => {
   const [isShowKeyboard, setIsShowKeyboard] = useState(false)
   const keyBoardHide = () => {
-    setIsShowKeyboard(false)
     Keyboard.dismiss()
+    setIsShowKeyboard(false)
   }
   return (
     <View style={styles.container}>
